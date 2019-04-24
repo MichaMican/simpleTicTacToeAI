@@ -3,12 +3,14 @@ package tictactoe.game;
 import tictactoe.players.ComputerPlayer1;
 import tictactoe.players.ComputerPlayer2;
 import tictactoe.players.ComputerPlayer3;
+import tictactoe.players.HumanPlayer;
 import tictactoe.printers.ConsolePrinter;
 
 public class Game {
     private Field field;
     private ConsolePrinter printer;
-    private ComputerPlayer2 player1;
+    //private ComputerPlayer2 player1;
+    private HumanPlayer player1;
     private ComputerPlayer3 player2;
 
     /**
@@ -17,7 +19,8 @@ public class Game {
     public Game() {
         field = new Field();
         printer = new ConsolePrinter();
-        player1 = new ComputerPlayer2('X');
+        player1 = new HumanPlayer('X');
+        //player1 = new ComputerPlayer2('X');
         player2 = new ComputerPlayer3('O');
     }
 

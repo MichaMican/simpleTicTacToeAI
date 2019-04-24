@@ -119,20 +119,17 @@ public class ComputerPlayer3 {
             }
         }
 
-        //crossRB
+        //TODO: Evtl. Boni
 
 
-        //Boni
-
-
-        /* DEBUG */
+        /* DEBUG OUTPUT */
         /*for (int i = 0; i < convertedArray.length; i++) {
             for (int j = 0; j < convertedArray.length; j++) {
                 System.out.print(convertedArray[j][i]);
             }
             System.out.println();
         }*/
-        /* DEBUG END */
+        /* DEBUG OUTPUT END */
 
 
         if(score < 0){
@@ -161,14 +158,14 @@ public class ComputerPlayer3 {
             }
         }
 
-        /* DEBUG */
+        /* DEBUG OUTPUT*/
         for (int i = 0; i < moveValues.length; i++) {
             for (int j = 0; j < moveValues.length; j++) {
                 System.out.print(moveValues[j][i]);
             }
             System.out.println();
         }
-        /* DEBUG END*/
+        /* DEBUG OUTPUT END*/
 
 
 
@@ -186,8 +183,8 @@ public class ComputerPlayer3 {
         System.out.println("I will set my marker at position: " + bestPosition + " it had the lowest position " + lowestScore);
 
         if(bestPosition == -1){
-            System.out.println("Well that's embarrassing now... This text should never be displayed... Unless the board is full" +
-                    "but i assume, that the Framework arround the game made sure to catch that case... So if you're reading" +
+            System.out.println("Well that's embarrassing now... This text should never be displayed... Unless the board is full...\n" +
+                    "But i assume, that the Framework around the game made sure to catch that case... So if you're reading\n" +
                     "this: Sorry! I messed up somewhere - please contact tictactoe@daota.de maybe somebody there can help you!");
         }else{
             field.setMarker(bestPosition, marker);
