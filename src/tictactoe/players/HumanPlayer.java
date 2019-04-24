@@ -32,6 +32,12 @@ public class HumanPlayer {
             if(input < 1 || input > 9) {
                 System.out.println("That input was invalid - Please enter valid number (0 - 9)");
                 input = -1;
+            }else{
+                if(input <= 3){
+                    input += 6;
+                }else if(input >= 7){
+                    input -= 6;
+                }
             }
         }
 

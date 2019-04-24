@@ -20,7 +20,8 @@ public class ComputerPlayer3 {
 
     private float calculateScore(Field field, int x, int y){
 
-        float score = 100f; //The start score is 10 --> You can subtract from score for good moves/situations
+        //THE LOWER THE SCORE THE BETTER
+        float score = 100f; //The start score is 100 --> You can subtract from score for good moves/situations
         //creates a board around the play field, so calculating is easier later
         byte[][] convertedArray = new byte[3][3];
 
@@ -58,7 +59,7 @@ public class ComputerPlayer3 {
             }else if(numberOfEnemy > 0 && numberOfMe == 0){
                 score += 1.5;
             }else if(numberOfMe >= 2 && numberOfEnemy == 0){
-                score -= 10.0;
+                score -= 12.0; //This number is 12 and not 10 to prevent enemy player from winning (Move P: 1 KI: 5 P: 9 --> now answer with 4 or 6 and not in the corners!)
             }else if(numberOfMe > 0 && numberOfEnemy == 0){
                 score -= 1.5;
             }else{ //if numberOfEnemy & numberOfMe is same or the row is full without a "winner"
@@ -159,16 +160,16 @@ public class ComputerPlayer3 {
         }
 
         /* DEBUG OUTPUT*/
-        for (int i = 0; i < moveValues.length; i++) {
+        /*for (int i = 0; i < moveValues.length; i++) {
             for (int j = 0; j < moveValues.length; j++) {
                 System.out.print(moveValues[j][i]);
             }
             System.out.println();
-        }
+        }*/
         /* DEBUG OUTPUT END*/
 
 
-
+        //THE LOWER THE SCORE THE BETTER
         float lowestScore = 2000;
         int bestPosition = -1;
         for (int y = 0; y < moveValues.length; y++) {
