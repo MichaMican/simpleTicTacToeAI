@@ -23,6 +23,15 @@ public class HumanPlayer {
      * @param field Field to set the marker to.
      */
     public void nextMove(Field field) {
+        /*
+        7 | 8 | 9
+        ----------
+        4 | 5 | 6
+        ----------
+        1 | 2 | 3    
+        --> Controlls (Numblock)
+        */
+
         System.out.println();
         Scanner sc = new Scanner(System.in); // object for scanner
         System.out.println("Enter where you want to put your point No: ");
