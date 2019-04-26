@@ -55,7 +55,7 @@ public class ComputerPlayer3 {
             if(numberOfMe == 3){
                 score -= 1000;
             }else if(numberOfEnemy >= 2 && numberOfMe == 0){
-                score += 10.0;
+                score += 20.0;
             }else if(numberOfEnemy > 0 && numberOfMe == 0){
                 score += 1.5;
             }else if(numberOfMe >= 2 && numberOfEnemy == 0){
@@ -81,7 +81,7 @@ public class ComputerPlayer3 {
             if(numberOfMe == 3){
                 score -= 1000;
             }else if(numberOfEnemy >= 2 && numberOfMe == 0){
-                score += 10.0;
+                score += 20.0;
             }else if(numberOfEnemy > 0 && numberOfMe == 0){
                 score += 1.5;
             }else if(numberOfMe >= 2 && numberOfEnemy == 0){
@@ -108,7 +108,7 @@ public class ComputerPlayer3 {
             if(numberOfMe == 3){
                 score -= 1000;
             }else if(numberOfEnemy >= 2 && numberOfMe == 0){
-                score += 10.0;
+                score += 20.0;
             }else if(numberOfEnemy > 0 && numberOfMe == 0){
                 score += 1.5;
             }else if(numberOfMe >= 2 && numberOfEnemy == 0){
