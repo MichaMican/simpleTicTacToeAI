@@ -136,7 +136,7 @@ public class ComputerPlayer3 {
         if(score < 0){
             score = 0;
         }
-        System.out.println("My Score is " + score);
+        //System.out.println("My Score is " + score);
         return score;
     }
 
@@ -181,7 +181,7 @@ public class ComputerPlayer3 {
             }
         }
 
-        System.out.println("I will set my marker at position: " + bestPosition + " it had the lowest position " + lowestScore);
+        //System.out.println("I will set my marker at position: " + bestPosition + " it had the lowest position " + lowestScore);
 
         if(bestPosition == -1){
             System.out.println("Well that's embarrassing now... This text should never be displayed... Unless the board is full...\n" +
